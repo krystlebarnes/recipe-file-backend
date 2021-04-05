@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+MealType.destroy_all
+Recipe.destroy_all
+
 breakfast = MealType.create(name: "Breakfast")
 morning_snack = MealType.create(name: "Morning Snack")
 lunch = MealType.create(name: "Lunch")
