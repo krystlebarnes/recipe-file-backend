@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_04_05_053631) do
     t.string "instructions"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "meal_type_id"
+    t.bigint "meal_type_id", null: false
     t.index ["meal_type_id"], name: "index_recipes_on_meal_type_id"
   end
 
